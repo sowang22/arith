@@ -1,0 +1,40 @@
+Modularity Design for Arith
+
+>> One big component of this project is to utilize several files with functions that complete smaller bits of arithmetic that 
+>> when put together take us through the process of compressing and decompressing.
+
+Files:
+
+Given >>
+       compress40.h
+          - Contains functions that take in a file and compress or decompress.
+          - The implementation of this file will be written by us
+       bitpack.h
+          - Declarations of all necessary functions for bitpack.c which we will write
+       arith40.h
+          - Contains index_of_chroma and chroma_of_index and test_chroma_map (?)
+          - This does not need to be implemented by us
+          - index_of_chroma goes float to unsigned
+          - chroma_of_index goes unsigned to float
+       40image.c
+          - Client file that will be the epicenter of the program
+         
+What we have to write >>
+       FileIO.c
+          - Includes pnm.h
+          - Is given a file and performs the necessary asserts to ensure that the image is a ppm, readable, not empty
+          - Has a function that will check if a given image is a ppm image
+          - Has a function that will write to a ppm, uses ppm_write
+          - Called by 40image.c
+       Compress40.c
+          - Writes compress and decompress functions
+       Bitpack.c
+          - Implementation for bitpack.h, will pack your data
+          
+Files we need to include >>
+       uarray2b.h
+       uarray2.h
+       a2blocked.h
+       a2methods.h
+       
+       
