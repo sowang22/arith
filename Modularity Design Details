@@ -18,8 +18,11 @@ Given >>
           - chroma_of_index goes unsigned to float
        40image.c
           - Client file that will be the epicenter of the program
-         
+       pnm.h
+          - You already know who it is
+  
 What we have to write >>
+       FileIO.h
        FileIO.c
           - Includes pnm.h
           - Is given a file and performs the necessary asserts to ensure that the image is a ppm, readable, not empty
