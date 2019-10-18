@@ -40,4 +40,21 @@ Files we need to include >>
        a2blocked.h
        a2methods.h
        
-       
+
+
+CLIENT: 40image.c
+|
+|
+(de)compress.c
+|
+|
+Convert2CV.c - Uarray2.c
+|
+|
+Bitpack.c
+|
+|
+(Write the image out)
+
+
+
